@@ -18,21 +18,16 @@
       <div class="topNavBar">
         <h1><a href="index.html">GitInfo</a></h1>
 
-        <!-- MENU DESKTOP (apenas 3 itens) -->
         <nav class="desktop-nav">
           <a href="about.html">Sobre nós</a>
           <a href="contactos.html">Contate-nos</a>
           <a href="investidores.html">Investidores</a>
         </nav>
 
-        <!-- MENU HAMBÚRGUER (apenas no mobile) -->
         <button class="hamburger-btn" aria-label="Abrir menu mobile">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span></span><span></span><span></span>
         </button>
 
-        <!-- MENU MOBILE (6 itens) -->
         <div class="mobile-menu">
           <ul>
             <li><a href="about.html">Sobre nós</a></li>
@@ -46,46 +41,51 @@
       </div>
     </header>
 
-    <!-- Botão de Acessibilidade -->
     <div class="accessibility-btn">
       <img src="3815150.png" alt="Acessibilidade" />
     </div>
 
-    <!-- Painel de Acessibilidade -->
     <div class="accessibility-panel shadow">
       <h5>Opções de Acessibilidade</h5>
-
       <button class="acc-btn" onclick="toggleContrast()">Alto Contraste</button>
       <button class="acc-btn" onclick="increaseFont()">Aumentar Texto</button>
       <button class="acc-btn" onclick="decreaseFont()">Diminuir Texto</button>
-      <button class="acc-btn" onclick="resetAccessibility()">
-        Repor Definições
-      </button>
+      <button class="acc-btn" onclick="resetAccessibility()">Repor</button>
     </div>
 
     <div id="mainDiv">
       <article>
-        <h2>Sobre Nós</h2>
+        <h2 class="text-center">Sobre Nós</h2>
 
-        <p>
-          O GitInfo é um site educativo criado com o objetivo de ajudar
-          estudantes e iniciantes a entenderem Git desde o básico até conceitos
-          mais avançados, através de explicações simples e exercícios práticos.
+        <p class="lead text-center">
+          O GitInfo é uma plataforma educativa criada para ajudar estudantes e
+          iniciantes a aprender Git através de explicações simples, práticas e
+          diretas.
         </p>
 
-        <div class="row">
-          <div class="col-md-6 mt-3">
-            <h3>Olavo Gonçalves Moreira</h3>
+        <div class="row g-4 justify-content-center">
+          <!-- Card Olavo -->
+          <div class="col-md-5">
+            <div class="team-card">
+              <img src="olavo.png" alt="Olavo" class="team-photo" />
+              <h3>Olavo Gonçalves Moreira</h3>
+            </div>
           </div>
 
-          <div class="col-md-6 mt-3">
-            <h3>Maria Giullia Lima Lopes Barbosa</h3>
+          <!-- Card Giullia -->
+          <div class="col-md-5">
+            <div class="team-card">
+              <img src="giullia.png" alt="Giullia" class="team-photo" />
+              <h3>Maria Giullia Lima Lopes Barbosa</h3>
+            </div>
           </div>
         </div>
 
         <hr />
       </article>
     </div>
+
+    <footer>A work made by Olavo and Giullia</footer>
     <script src="acessibilidade.js"></script>
     <script src="index.js"></script>
   </body>
